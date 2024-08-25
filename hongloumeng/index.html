@@ -1,0 +1,362 @@
+<html>
+
+<head>
+    <link rel="shortcut  icon" href="" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <style type="text/css">
+                    .a{
+                font-family: serif;
+                position: absolute;
+                top: 10%;
+                right: 2%;
+                width: 10%;
+                height: 60px;
+                z-index: 1;
+                text-align: center;
+                line-height: 60px;
+                background-color: #7c0a21;
+                border: 2px solid #7c0a21;
+                border-radius: 10px;
+                cursor: pointer;
+                color: white;
+                box-shadow: 0 0.7565932872px 5px #7c0a21;
+                transition: 0.2s;
+                font-size: 20px;
+            }
+            .a:hover{
+                box-shadow: 0 1.7565932872px 9px #7c0a21;
+                transition: 0.2s;
+            }
+            .a:active{
+                width: 8%;
+                height: 50px;
+                top:15px;
+                line-height: 50px;
+                right: 3%;
+                transition: 0.1s;
+            }
+            .r{
+                
+                display: inline-table;
+                position: relative;
+                top: 0;
+                width: 100px;
+                height: 150px;
+                z-index: 1;
+                
+                background-color: #ffffff;
+
+
+            }
+            .r1{
+                font-family: serif;
+                text-align: center;
+                line-height: 80px;
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+                border: 2px solid #000000;
+                border-radius: 0px;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                width: 80px;
+                height: 150px;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+            }
+            .g{
+                display: inline-table;
+                font-family: serif;
+                
+                position: relative;
+                top: 0;
+                width: 130px;
+                height: 150px;
+                z-index: 1;
+                background-color: #ffffff;
+            }
+            .x{
+                position: absolute;
+                top:90px;
+                background-color: #000000;
+                height: 2px;
+                width: 100%;
+                left: 0;
+            }
+            .z{
+                position: absolute;
+                top:65px;
+                height: 20px;
+                width: 100%;
+                left: 0;
+                font-family: serif;
+                text-align: center;
+                line-height: 20px;
+                color: #7c0a21;
+                font-size: 20px;
+            }
+    </style>
+    <script type="text/javascript">
+ var sjk = [
+ 	[ "贾政", "贾宝玉", "父子" ],
+ 	[ "贾政", "贾元春", "父女" ],
+ 	[ "贾珍", "茄官", "主仆" ],
+ 	[ "贾珍", "银蝶儿", "主仆" ],
+ 	[ "尤氏", "茄官", "主仆" ],
+ 	[ "尤氏", "银蝶儿", "主仆" ],
+ 	[ "贾惜春", "入画", "主仆" ],
+ 	[ "贾惜春", "彩屏", "主仆" ],
+ 	[ "贾蓉", "瑞珠", "主仆" ],
+ 	[ "贾蓉", "宝珠", "主仆" ],
+ 	[ "秦可卿", "瑞珠", "主仆" ],
+ 	[ "秦可卿", "宝珠", "主仆" ],
+ 	[ "贾母", "鸳鸯", "主仆" ],
+ 	[ "贾母", "文言", "主仆" ],
+ 	[ "贾母", "琥珀", "主仆" ],
+ 	[ "贾赦", "秋桐", "主仆" ],
+ 	[ "贾赦", "费婆子", "主仆" ],
+ 	[ "贾赦", "王善保家的", "主仆" ],
+ 	[ "邢夫人", "秋桐", "主仆" ],
+ 	[ "邢夫人", "费婆子", "主仆" ],
+ 	[ "邢夫人", "王善保家的", "主仆" ],
+ 	[ "贾政", "金钏", "主仆" ],
+ 	[ "贾政", "玉钏", "主仆" ],
+ 	[ "贾政", "周瑞", "主仆" ],
+ 	[ "贾政", "周瑞家的", "主仆" ],
+ 	[ "王夫人", "金钏", "主仆" ],
+ 	[ "王夫人", "玉钏", "主仆" ],
+ 	[ "王夫人", "周瑞", "主仆" ],
+ 	[ "王夫人", "周瑞家的", "主仆" ],
+ 	[ "贾宝玉", "袭人", "主仆" ],
+ 	[ "贾宝玉", "晴雯", "主仆" ],
+ 	[ "贾宝玉", "麝月", "主仆" ],
+ 	[ "贾宝玉", "秋纹", "主仆" ],
+ 	[ "贾宝玉", "碧痕", "主仆" ],
+ 	[ "贾宝玉", "芳官", "主仆" ],
+ 	[ "贾宝玉", "茗烟", "主仆" ],
+ 	[ "贾宝玉", "春燕", "主仆" ],
+ 	[ "贾琏", "平儿", "主仆" ],
+ 	[ "贾琏", "小红", "主仆" ],
+ 	[ "贾琏", "林之孝", "主仆" ],
+ 	[ "贾琏", "林之孝家的", "主仆" ],
+ 	[ "贾琏", "赵嬷嬷", "主仆" ],
+ 	[ "王熙凤", "平儿", "主仆" ],
+ 	[ "王熙凤", "小红", "主仆" ],
+ 	[ "王熙凤", "林之孝", "主仆" ],
+ 	[ "王熙凤", "林之孝家的", "主仆" ],
+ 	[ "王熙凤", "赵嬷嬷", "主仆" ],
+ 	[ "贾元春", "抱琴", "主仆" ],
+ 	[ "贾元春", "青芸", "主仆" ],
+ 	[ "贾迎春", "司祺", "主仆" ],
+ 	[ "贾迎春", "绣橘", "主仆" ],
+ 	[ "贾迎春", "王善保家的", "主仆" ],
+ 	[ "贾探春", "侍书", "主仆" ],
+ 	[ "贾探春", "艾官", "主仆" ],
+ 	[ "贾探春", "翠墨", "主仆" ],
+ 	[ "李纨", "素云", "主仆" ],
+ 	[ "李纨", "碧月", "主仆" ],
+ 	[ "林黛玉", "雪雁", "主仆" ],
+ 	[ "林黛玉", "紫鹃", "主仆" ],
+ 	[ "史湘云", "翠缕", "主仆" ],
+ 	[ "史湘云", "葵官", "主仆" ],
+ 	[ "史湘云", "周奶妈", "主仆" ],
+ 	[ "薛姨妈", "同喜", "主仆" ],
+ 	[ "薛姨妈", "同贵", "主仆" ],
+ 	[ "薛宝钗", "莺儿", "主仆" ],
+ 	[ "薛宝钗", "文杏", "主仆" ],
+ 	[ "薛宝钗", "蕊官", "主仆" ],
+ 	[ "薛蟠", "宝蟾", "主仆" ],
+ 	[ "薛蟠", "小舍儿", "主仆" ],
+ 	[ "香菱", "臻儿", "主仆" ]
+ ]
+
+ function diandao ( s ) { //颠倒
+ 	var c = ''
+ 	for ( let i = 0; i < s.length; i++ ) {
+ 		c = c + s[ s.length - 1 - i ]
+ 	}
+ 	return c
+ }
+
+ function isinStr ( str, value ) { //字符串是否包含
+ 	if ( String( str )
+ 		.indexOf( String( value ) ) != -1 ) {
+ 		return true
+ 	} else {
+ 		return false
+ 	}
+ }
+
+ function isInArray ( arr, value ) { //数组是否包含
+ 	if ( !arr ) {
+ 		return false
+ 	}
+ 	for ( var i = 0; i < arr.length; i++ ) {
+ 		if ( value === arr[ i ] ) {
+ 			return true;
+ 		}
+ 	}
+ 	return false;
+ }
+
+ function arrCDX ( arr ) { //数组重定向
+ 	var arr2 = []
+ 	for ( let i = 0; i < arr.length; i++ ) {
+ 		const element = arr[ i ];
+ 		arr2.push( element )
+ 	}
+ 	return arr2
+ }
+
+ function arrremove ( arr, item ) { //数组删除
+ 	for ( var i = arr.length - 1; i >= 0; i-- ) {
+ 		if ( arr[ i ] == item ) {
+ 			arr.splice( i, 1 );
+ 		}
+ 	}
+ 	return arr;
+ }
+ window.onload = function () {
+ 	//填充反关系
+ 	var t = sjk.length
+ 	for ( let i = 0; i < t; i++ ) {
+ 		sjk.push( [ sjk[ i ][ 1 ], sjk[ i ][ 0 ], diandao( sjk[ i ][ 2 ] ) ] )
+ 	}
+ }
+
+ function l ( a ) {
+ 	var b = []
+ 	for ( let i = 0; i < sjk.length; i++ ) {
+ 		if ( sjk[ i ][ 0 ] == a ) {
+ 			b.push( sjk[ i ][ 1 ] )
+ 		}
+ 	}
+ 	return b
+ }
+
+ function find ( a1, a2 ) {
+ 	for ( let i = 0; i < sjk.length; i++ ) {
+ 		if ( sjk[ i ][ 0 ] == a1 && sjk[ i ][ 1 ] == a2 ) {
+ 			return a1 + ';' + sjk[ i ][ 2 ] + ';' + a2 + '|'
+ 		}
+ 	}
+
+
+
+
+ 	var b1 = [
+ 		[ a1 ]
+ 	]
+ 	var b2 = [
+ 		[ a2 ]
+ 	]
+ 	for ( let i = 0; i < 10; i++ ) {
+ 		b1.push( [] );
+ 		b2.push( [] );
+
+
+ 		for ( let j = 0; j < b1[ i ].length; j++ ) {
+ 			var e = l( b1[ i ][ j ] )
+ 			var el = []
+ 			//console.log(e,b1[i])
+ 			for ( let u = 0; u < e.length; u++ ) {
+ 				if ( ( isInArray( b1[ i ], e[ u ] ) == false ) && ( isInArray( b1[ i + 1 ], e[ u ] ) == false ) && ( isInArray( b1[ i - 1 ], e[ u ] ) == false ) ) {
+ 					b1[ i + 1 ].push( e[ u ] )
+ 				}
+ 			}
+
+ 		}
+
+ 		for ( let j = 0; j < b1[ i + 1 ].length; j++ ) {
+ 			//console.log(b2[i])
+ 			if ( isInArray( b2[ i ], b1[ i + 1 ][ j ] ) ) {
+ 				var zjr = b1[ i + 1 ][ j ] //中间人
+ 				return find( a1, zjr ) + find( zjr, a2 )
+ 			}
+ 		}
+
+
+ 		for ( let j = 0; j < b2[ i ].length; j++ ) {
+ 			var e = l( b2[ i ][ j ] )
+ 			var el = []
+ 			for ( let u = 0; u < e.length; u++ ) {
+ 				if ( ( !isInArray( b2[ i ], e[ u ] ) ) && ( !isInArray( b2[ i + 1 ], e[ u ] ) ) && ( !isInArray( b2[ i - 1 ], e[ u ] ) ) ) {
+ 					b2[ i + 1 ].push( e[ u ] )
+ 				}
+ 			}
+
+ 		}
+
+ 		//console.log(b1,b2)
+
+ 		for ( let j = 0; j < b2[ i + 1 ].length; j++ ) {
+ 			if ( isInArray( b1[ i + 1 ], b2[ i + 1 ][ j ] ) ) {
+ 				var zjr = b2[ i + 1 ][ j ] //中间人
+ 				return find( a1, zjr ) + find( zjr, a2 )
+ 			}
+ 		}
+ 	}
+ }
+ function z() {
+    function r(r) {
+        return `<div class="r"><div class="r1">`+r+`</div></div>` 
+    }
+    function g(g) {
+        return `<div class="g"><div class="z">`+g[0]+`&emsp;&emsp;&emsp;`+g[1]+`</div><div class="x"></div></div>` 
+    }
+    var a1=document.getElementById('1').value
+    var a2=document.getElementById('2').value
+
+    var t=find(a1,a2)
+    //console.log(t)
+    if (!t) {
+        document.getElementById('f').innerHTML=''
+        return
+    }
+    var c=[]
+        for (let i = 0; i < t.split('|').length-1; i++) {
+            //console.log(c[c.length-1]==t.split('|')[i].split(';')[0])
+            if (!(c[c.length-1]===t.split('|')[i].split(';')[0])) {
+                c.push(t.split('|')[i].split(';')[0])
+            }
+            c.push("g"+t.split('|')[i].split(';')[1])
+            c.push(t.split('|')[i].split(';')[2])
+        }
+        //console.log(c)
+        var c1=''
+for (let i = 0; i < c.length; i++) {
+    if(c[i][0]=='g'){
+        c1=c1+g(c[i].substring(1,c[i].length))
+    }else{
+        c1=c1+r(c[i])
+    }
+}
+//console.log(c1)
+document.getElementById('f').innerHTML=c1
+ }
+    </script>
+    <script type="text/javascript" src="1.js"></script>
+</head>
+
+<body>
+<div style="position: absolute;margin: auto;left: 0;right: 0;top: 0;height: 100px;background-color: rgb(255, 255, 255);text-align: center;font-family: 'Times New Roman', 宋体,serif,'Liberation Mono';color: #7c0a21;font-size: 35px;line-height: 100px;">红楼梦人物关系查询</div>
+<div style="position: absolute;margin: auto;left: 0;right: 0;top: 100;height: 100px;background-color: rgb(255, 255, 255);text-align: center;color: #000000;font-size: 20px;line-height: 100px;">
+    <input id="1" style="position: absolute;top: 10px;height: 60px;left: 2%;width: 41%;font-size: 20;font-family: 'Times New Roman', 宋体,serif,'Liberation Mono';" placeholder="人物一"/>
+    <input id="2" style="position: absolute;top: 10px;height: 60px;left: 45%;width: 41%;font-size: 20;font-family: 'Times New Roman', 宋体,serif,'Liberation Mono';" placeholder="人物二"/>
+    <div class="a" onclick="z()">查询</div>
+</div>
+<div id="f" style="position: absolute;margin: auto;left: 0;right: 0;top: 200px;height: 200px;overflow-y: hidden;overflow-x: scroll;white-space: nowrap;">
+
+</div>
+<div style="position: absolute;margin: auto;left: 0;right: 0;bottom: 0;height: 50px;background-color: rgb(255, 255, 255);text-align: center;font-family: 'Times New Roman', 宋体,serif,'Liberation Mono';color: #000000;font-size: 20px;line-height: 25px;">
+    程序制作：刘宗尧（学生）；数据整理提供：杨辰安（学生）、燕禹铮（学生）；教师：俞珺<br>
+    北京师大附中2026届
+</div>
+</body>
+
+</html>
