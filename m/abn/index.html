@@ -1,0 +1,220 @@
+
+<html>  
+  <head>  
+
+    <meta charset="utf-8">
+    <title>(a+b)ⁿ</title>  
+      
+<style>
+div{ display:inline} 
+.zifu{
+
+
+white-space: nowrap;
+}
+
+
+.an{
+  position: fixed;
+  left:5px;
+ top: 60px;
+
+
+}
+
+
+#xs{
+    position: fixed;
+    white-space: nowrap;
+top:150px; 
+left: 5px;
+overflow:auto;
+width: 95%;
+height: 60px;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 6px;
+  background: rgba(#101F1C, 0.1);
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144,147,153,.5);
+  background-clip: padding-box;
+  min-height: 28px;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144,147,153,.3);
+}
+
+
+
+
+</style>
+    <script type="text/javascript"> 
+
+
+
+
+window.onload=function(){
+  jjianw="0"
+
+ //alert(yhsj(5,4))
+}
+     
+function jx(x){
+if (x==0){return 1 }
+var yscs=x
+for (var k=1;k<x;k++){
+var yscs=yscs*k
+}
+return yscs
+}
+
+
+
+        function yhsj(m,n){
+          var lsbl=jx(n-1)*jx(m-n);
+            return Math.round(jx(m-1)/lsbl);
+        }
+
+function xs(){
+jjjx=document.getElementById("srk").value
+document.getElementById("xs").innerHTML="..."
+
+var x=Number(jjjx)
+
+var zsysz=""
+
+var lssssc=""
+
+
+
+for (var k=0;k<x+1;k++) {
+ // alert(k)
+//alert(x+1)
+var zsysz=lssssc
+
+xishu=yhsj(x+1,k+1);
+
+xishu=String(xishu);
+
+
+//alert (xishu);
+
+
+
+if (xishu=="1"){
+  xishu=""
+}
+if (x-k==1){
+  adx="a"
+}else if(x-k==0){
+adx=""
+}else{
+  adx="<div class='zifu'>a<sup>"+String(x-k)+"</sup></div>"
+}
+
+
+
+if (k==1){
+  bdx="b"
+}else if(k==0){
+bdx=""
+}else{
+  bdx="<div class='zifu'>b<sup>"+String(k)+"</sup></div>"
+}
+
+if (x-k==0){
+  jhao=""
+}else{
+
+if (jjianw=="0"){
+  jhao="+"
+}else{
+  var gvgdvg=k+1
+
+
+
+if ( Number(gvgdvg) %2==1){
+  jhao="-"
+}else{
+  jhao="+"
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+var lssssc=zsysz+xishu+adx+bdx+jhao
+
+
+        //+yhsj(x+1,k+1)+"<div>a<sup>"+x-k+"</sup></div>"+"<div>b<sup>"+k+"</sup></div>"
+
+
+
+}
+//alert("az")
+document.getElementById("xs").innerHTML= lssssc
+}
+
+
+function jia(){
+  document.getElementById("ds").innerHTML= "(a+b)"
+  jjianw="0"
+}
+function jian(){
+  document.getElementById("ds").innerHTML= "(a-b)"
+  jjianw="1"
+}
+    </script>  
+  </head>  
+  <body>  
+    <div id="ds" >(a+b)</div><sup><input value="" id=srk /></sup>
+
+
+    <div class="an">
+
+
+
+      <input value="加法" type="button" onclick="jia();" />  
+      <input value="减法" type="button" onclick="jian();" />  
+      <input value="运算" type="button" onclick="xs();" />  
+    </div>
+    
+
+
+    <div id=xs>
+
+...
+    </div>
+  </body>  
+</html>
