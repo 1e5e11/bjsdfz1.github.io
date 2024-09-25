@@ -299,6 +299,19 @@
 	    document.getElementById('1').value = y
 	    return y
 	}
+	function az_cn_yf(s){
+		var y=az_jt_ft(s)
+		y=y.replace( /的/g, '嘅' )
+		y=y.replace( /是/g, '係' )
+		y=y.replace( /了/g, '咗' )
+		y=y.replace( /看/g, '睇' )
+		y=y.replace( /沒有/g, '冇' )
+		y=y.replace( /沒/g, '冇' )
+		y=y.replace( /睡/g, '瞓' )
+
+		document.getElementById('1').value = y
+	    return y
+	}
         </script>
 <script type="text/javascript" src=""></script>
         </head>
@@ -316,6 +329,8 @@
 <button onclick="az_en_cn(document.getElementById('1').value)">啊这英译中</button>
 <br>
 <button onclick="az_jt_ft(document.getElementById('1').value)">啊这简体转繁体</button>
+<br>
+<button onclick="az_en_cn(az_cn_yf(document.getElementById('1').value))">啊这简体转粤语繁体</button>
 <br>
 <button onclick="az_ft_jt(document.getElementById('1').value)">啊这繁体转简体</button>
 <br>
